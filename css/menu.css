@@ -4,39 +4,48 @@
     top: 0;
     right: 0px;
     width: 100%;
+    margin: 0;
+    z-index: 2;
     /* text-align: center; */
-     
+}
+
+.btn-gnavi{
+    margin: 0;
 }
 
 #wrepper{
     position: relative;
 }
 
-#wrapper div{
-    position: absolute;
+#nav_wrapper div{
+    position: fixed;
     left: 0;
     right: 0;
     margin: 0 auto;
     text-align: center;
 }
 
-#wrapper nav ul{
+#nav_wrapper nav ul{
     text-align: right;
     padding-right: 40px;
+    margin: 0;
 }
 
-#wrapper nav ul li, #wrapper div{
+#nav_wrapper nav ul li, #nav_wrapper div{
     display:inline-block;
     font-size: 16px;
     padding:  25px 20px;
 }
-#wrapper nav ul li a, #wrapper div a{
+#nav_wrapper nav ul li a, #nav_wrapper div a{
     color: #ddd
+}
+#nav_wrapper nav ul li a img, #nav_wrapper div a img{
+    height: 40px;
 }
 
 /*スマホ画面でハンバーガーメニューの形にする*/
 @media screen and (max-width: 1100px) {
-    #wrapper nav {
+    #nav_wrapper nav {
         position: fixed;
         top: 0;
         right: -300px;
@@ -48,17 +57,17 @@
         box-sizing: border-box;
         z-index: 2
     }
-    #wrapper nav ul li {
+    #nav_wrapper nav ul li {
         display:block;
         padding: 20px 28px
     }
     
-    #wrapper nav ul li a {
+    #nav_wrapper nav ul li a {
         text-decoration: none;
         color: #ddd
     }
     
-    #wrapper .btn-gnavi {
+    #nav_wrapper .btn-gnavi {
         position: fixed;
         top: 20px;
         right: 20px;
@@ -71,7 +80,7 @@
         transition: all 400ms
     }
     
-    #wrapper .btn-gnavi span {
+    #nav_wrapper .btn-gnavi span {
         position: absolute;
         width: 30px;
         height: 4px;
@@ -81,31 +90,31 @@
         transition: all 400ms
     }
     
-    #wrapper .btn-gnavi span:nth-child(1) {
+    #nav_wrapper .btn-gnavi span:nth-child(1) {
         top: 0
     }
     
-    #wrapper .btn-gnavi span:nth-child(2) {
+    #nav_wrapper .btn-gnavi span:nth-child(2) {
         top: 10px
     }
     
-    #wrapper .btn-gnavi span:nth-child(3) {
+    #nav_wrapper .btn-gnavi span:nth-child(3) {
         top: 20px
     }
     
-    #wrapper .btn-gnavi.open {
+    #nav_wrapper .btn-gnavi.open {
         -webkit-transform: rotate(180deg);
         transform: rotate(180deg)
     }
     
-    #wrapper .btn-gnavi.open span {
+    #nav_wrapper .btn-gnavi.open span {
         background: #666
     }
     
-    #wrapper .btn-gnavi.open span {
+    #nav_wrapper .btn-gnavi.open span {
         width: 24px;
     }
-    #wrapper .contents section p {
+    #nav_wrapper .contents section p {
         position: absolute;
         top: 50%;
         width: 30%;
@@ -115,11 +124,11 @@
         text-shadow: 0 0 6px #666
     }
     
-    #wrapper .contents section:nth-child(odd) p {
+    #nav_wrapper .contents section:nth-child(odd) p {
         left: 10%
     }
     
-    #wrapper .contents section:nth-child(even) p {
+    #nav_wrapper .contents section:nth-child(even) p {
         right: 10%
     }
 }

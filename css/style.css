@@ -1,14 +1,60 @@
 html, body{
     width: 100%;
+    margin: 0px;
 }
 
-#cover {
-    display: block;
+.video_wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    margin-top: 94px; /* for fix nav */
+}
+
+.video_wrapper iframe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.contents_wrapper{
+    position: relative;
+}
+
+.contents{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.cover{
+    display: relative;
+    height: 100%;
+}
+
+.cover img{
+    height: 75%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     margin: auto;
-    width: 90%;
+    z-index: 1;
+    pointer-events: none;
 }
 
-.content{
+.calendar_wrapper img{
+    width: 100%;
+}
+
+
+/* .content{
     line-height: 1.6;
     margin: 0 auto;
     padding-top: 100px;
@@ -24,4 +70,4 @@ html, body{
     width: 100%;
     display: block;
     margin: auto;
-}
+} */
