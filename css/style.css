@@ -1,0 +1,27 @@
+html, body{
+    width: 100%;
+}
+
+#cover {
+    display: block;
+    margin: auto;
+    width: 90%;
+}
+
+.content{
+    line-height: 1.6;
+    margin: 0 auto;
+    padding-top: 100px;
+    height: 80%;
+    width: 80%;
+
+}
+.content p{
+    margin-bottom: 40px;
+}
+
+#calender{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
