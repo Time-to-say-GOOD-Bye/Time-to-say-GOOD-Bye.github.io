@@ -57,6 +57,13 @@
         box-sizing: border-box;
         z-index: 2
     }
+
+    #nav_wrapper #nav_cb:checked ~ nav {
+        right: 0px;
+        -webkit-transition: all 400ms;
+        transition: all 400ms
+    }
+
     #nav_wrapper nav ul li {
         display:block;
         padding: 20px 28px
@@ -102,16 +109,16 @@
         top: 20px
     }
     
-    #nav_wrapper .btn-gnavi.open {
+    #nav_wrapper #nav_cb:checked ~ .btn-gnavi {
         -webkit-transform: rotate(180deg);
         transform: rotate(180deg)
     }
     
-    #nav_wrapper .btn-gnavi.open span {
+    #nav_wrapper #nav_cb:checked ~ .btn-gnavi span {
         background: #666
     }
     
-    #nav_wrapper .btn-gnavi.open span {
+    #nav_wrapper #nav_cb:checked ~ .btn-gnavi span {
         width: 24px;
     }
     #nav_wrapper .contents section p {
