@@ -26,9 +26,10 @@
 }
 
 #nav_wrapper nav ul{
+    max-width: 1400px;
+    margin: 0 auto;
     text-align: right;
     padding-right: 40px;
-    margin: 0;
 }
 
 #nav_wrapper nav ul li, #nav_wrapper div{
