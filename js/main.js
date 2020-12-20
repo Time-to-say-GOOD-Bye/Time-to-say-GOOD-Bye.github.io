@@ -2,8 +2,7 @@
 imageMapResize();
 
 // init video modal
-new ModalVideo('.js-modal-btn');
-// document.getElementsByClassName("js-modal-btn")
+new ModalVideo('.js-modal-btn', {playsinline: 1});
 
 // load cover video inline
 var tag = document.createElement('script');
