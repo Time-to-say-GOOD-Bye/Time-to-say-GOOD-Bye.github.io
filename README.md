@@ -1,8 +1,8 @@
-This is the git repository for the project "Time to say GOOD Bye."
+This git repository is the for the project "Time to say GOOD Bye."
 
 The project web page: [https://time-to-say-good-bye.github.io/](https://time-to-say-good-bye.github.io/)
 
-# how to upate
+# how to update
 ## image map
   `index.html`
   format like this from generator output
