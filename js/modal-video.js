@@ -154,7 +154,7 @@ var defaults = {
     mute: 0,
     origin: null,
     playlist: null,
-    playsinline: null,
+    playsinline: 1,
     rel: 0,
     showinfo: 1,
     start: 0,
