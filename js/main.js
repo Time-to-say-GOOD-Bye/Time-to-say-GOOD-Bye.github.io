@@ -1,5 +1,9 @@
-// resize image map
+// init resize image map
 imageMapResize();
+
+// init video modal
+new ModalVideo('.js-modal-btn');
+// document.getElementsByClassName("js-modal-btn")
 
 // load cover video inline
 var tag = document.createElement('script');
