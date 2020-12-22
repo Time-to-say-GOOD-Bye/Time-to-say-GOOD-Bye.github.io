@@ -6,7 +6,7 @@ new ModalVideo('.js-modal-btn');
 
 // load cover video inline
 var tag = document.createElement('script');
-tag.src = "https://www.youtube.com/iframe_api";
+tag.src = "https://youtu.be/HvR5X3ZVNsU";
 var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
  
