@@ -6,7 +6,7 @@ new ModalVideo('.js-modal-btn');
 
 // load cover video inline
 var tag = document.createElement('script');
-tag.src = "https://youtu.be/HvR5X3ZVNsU";
+tag.src = "https://www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
  
@@ -15,7 +15,7 @@ function onYouTubeIframeAPIReady() {
   player = new YT.Player('player', {
     height: '360',
     width: '640',
-    videoId: 'Q9oUQYsApxg',  // update this id
+    videoId: 'HvR5X3ZVNsU',  // update this id
     playerVars: {
       playsinline: 1 
     },
