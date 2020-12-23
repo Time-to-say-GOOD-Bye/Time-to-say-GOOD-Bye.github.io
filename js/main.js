@@ -37,4 +37,14 @@ function onPlayerStateChange(event) {
     }
 }
 
+// for gtag track
+
+let area = document.getElementsByClassName("js-modal-btn");
+for(i=0; i<area.length; i++){
+  let target = area[i];
+  let gtag = "gtag('event', 'Calendar_Click', {'event_category': '"+ target.title +"'});";
+
+  target.setAttribute("onclick", gtag)
+}
+
 
