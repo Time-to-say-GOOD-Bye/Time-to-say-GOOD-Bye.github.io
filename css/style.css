@@ -31,6 +31,15 @@ area {
     position: relative;
 }
 
+.calendar_wrapper{
+    padding-top: 94px;
+}
+
+#calendar{
+    margin-top: -94px;
+    padding-top: 94px;
+}
+
 .contents{
     position: absolute;
     top: 0;
